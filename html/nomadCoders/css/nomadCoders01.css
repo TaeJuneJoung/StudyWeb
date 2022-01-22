@@ -1,0 +1,36 @@
+/* Progress */
+
+progress[value]::-webkit-progress-bar {
+    background-color: whitesmoke;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.progressTest[value] {
+    appearance: none;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.progressTest[value]::-webkit-progress-value {
+    background-image: linear-gradient(to left, #2ecc71, #3498db);
+}
+
+.text-color-puple {
+    color: purple;
+    font-style: italic;
+    font-size: small;
+}
+
+/* Details */
+.detailsTest[open] {
+    background-color: #cdedfd;
+    background-image: linear-gradient(
+        319deg,
+        #cdedfd 0%,
+        #ffec82 37%,
+        #ffcfd2 100%
+    );
+}

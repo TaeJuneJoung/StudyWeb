@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomad Coders01</title>
+    <link rel="stylesheet" href="./css/nomadCoders01.css">
+</head>
+<body>
+    <h1>공부를 합시다</h1>
+    <h2>progress</h2>
+    <progress></progress>
+    <progress value="50" min="0" max="100"></progress>
+    <progress class="progressTest" value="50" min="0" max="100"></progress>
+
+    <h3>meter</h3>
+    <meter min="0" max="100" low="20" high="65" optimum="15" value="20"></meter>
+    <div>값이 높고, 낮을 때에 따라 색상이 바뀜</div>
+    <div>기본 색상은 <strong>초 -> 노 -> 빨</strong>이며, CSS pseudo classes를 활용해서 커스터마이징 가능</div>
+    <div class="text-color-puple">::-webkit-meter-inner-element</div>
+    <div class="text-color-puple">::-webkit-meter-even-less-good-value</div>
+    <div class="text-color-puple">::-webkit-meter-optimum-value</div>
+    <div class="text-color-puple">::-webkit-meter-suboptimum-value</div>
+
+    <h2>Details</h2>
+    <details class="detailsTest">
+        <summary>유저가 클릭하기 전 볼 수 있는 영역 Summary</summary>
+        <div>누르면 보이는 내용들 작성</div>
+    </details>
+
+    <h2>Week</h2>
+    <input type="week" name="" id="">
+
+    <h2>Picture</h2>
+    <picture>
+        <source srcset="" media=""/> <!-- media query -->
+        <img /> <!-- Default Value -->
+    </picture>
+
+    <h2>⭐DataList</h2>
+    <div><b>JS없이 Auto Complete(자동완성) 기능</b></div>
+
+    <!-- 자동완성 input에 list keyword에 datalist id값 넣어주기 -->
+    <input type="text" list="datalist-test">
+    <datalist id="datalist-test">
+        <option value="test" />
+        <option value="datalist" />
+        <option value="June0525" />
+    </datalist>
+
+
+</body>
+</html>
