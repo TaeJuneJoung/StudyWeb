@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone | KakaoTalk</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/75384426dc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex-box">
+        <div class="nav-bar">
+          <div class="nav-bar-main">
+            <ul>
+              <li
+                class="nav-bar-icon cursor-pointer nav-bar-selected"
+                id="friend-mode-icon"
+              >
+                <i class="fa-solid fa-user" title="친구"></i>
+              </li>
+              <li class="nav-bar-icon cursor-pointer" id="chatting-mode-icon">
+                <i class="fa-solid fa-comment" title="채팅"></i>
+              </li>
+              <li class="nav-bar-icon cursor-pointer" id="more-mode-icon">
+                <i class="fa-solid fa-ellipsis" title="더보기"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-bar-sub">
+            <ul>
+              <li class="nav-bar-icon cursor-pointer">
+                <i class="fa-regular fa-face-grin" title="이모티콘샵"></i>
+              </li>
+              <li class="nav-bar-icon cursor-pointer">
+                <i class="fa-regular fa-bell" title="알림"></i>
+              </li>
+              <li class="nav-bar-icon cursor-pointer">
+                <i class="fa-solid fa-gear" title="설정"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main">
+          <div class="title-bar">
+            <ul>
+              <li class="title-bar-icon cursor-pointer">
+                <i class="fa-solid fa-minus" title="최소화"></i>
+              </li>
+              <li class="title-bar-icon cursor-pointer">
+                <i class="fa-regular fa-square" title="최대화"></i>
+              </li>
+              <li class="title-bar-icon cursor-pointer">
+                <i class="fa-solid fa-xmark" title="닫기"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="mode-box">
+            <!-- 친구 모드 -->
+            <div class="friend-mode">
+              <div class="mode-title">
+                <div>
+                  <span>친구</span>
+                </div>
+                <div>
+                  <ul>
+                    <li class="main-mode-icon cursor-pointer" title="통합검색">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </li>
+                    <li class="main-mode-icon cursor-pointer" title="친구 추가">
+                      <i class="fa-solid fa-user-plus"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <img src="" alt="" />
+              </div>
+            </div>
+            <!-- 채팅 모드 -->
+            <div class="chatting-mode hide">
+              <div class="chatting-select-box">
+                <div class="mode-title">
+                  <div class="cursor-pointer">
+                    <span>채팅</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </div>
+                  <div>
+                    <ul>
+                      <li
+                        class="main-mode-icon cursor-pointer"
+                        title="통합검색"
+                      >
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </li>
+                      <li
+                        class="main-mode-icon cursor-pointer"
+                        title="오픈 채팅"
+                      >
+                        <i class="fa-solid fa-comments"></i>
+                      </li>
+                      <li
+                        class="main-mode-icon cursor-pointer"
+                        title="새로운 채팅"
+                      >
+                        <i class="fa-solid fa-comment-medical"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 더보기 모드 -->
+            <div class="more-mode hide">
+              <div class="mode-title">
+                <span>더보기</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="benner">
+        <div class="benner-opacity">
+          <a class="prev">❮</a>
+          <a class="next">❯</a>
+        </div>
+        <div class="benner-slide benner-background1"></div>
+        <div class="benner-dots-box">
+          <span class="benner-dot"></span>
+          <span class="benner-dot"></span>
+          <span class="benner-dot"></span>
+        </div>
+      </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>
